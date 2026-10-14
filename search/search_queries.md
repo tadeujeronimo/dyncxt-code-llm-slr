@@ -15,7 +15,13 @@ This document provides the standardized search strings, execution parameters, an
 
 The query string was designed following the PICO (Population, Intervention, Comparison, Outcome) model, connecting key terms with boolean operators (AND, OR):
 
-("Large Language Model" OR "LLM" OR "Code LLM") AND ("Dynamic Context" OR "Context Engineering" OR "Graph RAG" OR "Agent Memory" OR "Context Pruning") AND ("Repository-Level" OR "Project-Level" OR "Codebase") AND ("Functional Correctness" OR "pass@k" OR "Static Analysis" OR "Code Quality")
+("large language model" OR LLM OR "language models" OR "code LLMs")
+AND
+("dynamic context" OR "dynamic retrieval" OR "context management" OR "context engineering" OR "context pruning" OR "context selection" OR "adaptive context" OR "retrieval-augmented generation" OR RAG OR "agent memory")
+AND
+("static context" OR "fixed context" OR "limited context" OR "basic prompting" OR "baseline prompting" OR "static prompting" OR "static retrieval" OR "long context" OR "large context window" OR "single-turn")
+AND
+("functional correctness" OR "code correctness" OR "pass@k" OR "code metrics" OR "structural metrics" OR "structural quality" OR "code quality" OR "software quality" OR "maintainability" OR "static analysis")
 
 ---
 
