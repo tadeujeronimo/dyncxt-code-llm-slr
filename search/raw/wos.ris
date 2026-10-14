@@ -1,0 +1,879 @@
+﻿TY  - JOUR
+AU  - Tian, Zhao
+AU  - Chen, Junjie
+TI  - Aligning Requirement for Large Language Model's Code Generation
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Code generation refers to the automatic generation of source code based on a given programming specification, which has garnered significant attention particularly with the advancement of large language models (LLMs). However, due to the inherent complexity of real-world problems, the LLM-generated code often fails to fully align with the provided specification. While state-of-the-art agent-based techniques have been proposed to enhance LLM code generation, they overlook the critical issue of specification perception, resulting in persistent misalignment issues. Given that accurate perception of programming specifications serves as the foundation of the LLM-based code generation paradigm, ensuring specification alignment is particularly crucial. In this work, we draw on software requirements engineering to propose Specine, a novel specification alignment technique for LLM code generation. Its key idea is to identify misaligned input specifications, lift LLM-perceived specifications, and align them to enhance the code generation performance of LLMs. Our comprehensive experiments on four state-of-the-art LLMs across five challenging competitive benchmarks by comparing with ten state-of-the-art baselines, demonstrate the effectiveness of Specine. For example, Specine outperforms the most effective baseline, achieving an average improvement of 29.60% across all subjects in terms of Pass@1.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2509.01313
+AN  - PPRN:159372763
+AD  - Tianjin Univ, Coll Intelligence & Comp, Tianjin, Peoples R China
+Y2  - 2025-11-24
+ER  -
+
+TY  - CPAPER
+AU  - Da Silva Simoes, Igor Regis
+AU  - Venson, Elaine
+A1  - ASSOC COMPUTING MACHINERY
+TI  - Evaluating Source Code Quality with Large Language Models: a comparative study
+T2  - 23TH BRAZILIAN SYMPOSIUM ON SOFTWARE QUALITY, SBQS 2024
+M3  - Proceedings Paper
+CP  - 23rd Brazilian Symposium on Software Quality
+CL  - Salvador, BRAZIL
+AB  - Code quality is an attribute composed of various metrics, such as complexity, readability, testability, interoperability, reusability, and the use of good or bad practices, among others. Static code analysis tools aim to measure a set of attributes to assess code quality. However, some quality attributes can only be measured by humans in code review activities, readability being an example. Given their natural language text processing capability, we hypothesize that a Large Language Model (LLM) could evaluate the quality of code, including attributes currently not automatable. This paper aims to describe and analyze the results obtained using LLMs as a static analysis tool, evaluating the overall quality of code. We compared the LLM with the results obtained with the SonarQube software and its Maintainability metric for two Open Source Software (OSS) Java projects, one with Maintainability Rating A and the other B. A total of 1,641 classes were analyzed, comparing the results in two versions of models: GPT 3.5 Turbo and GPT 4o. We demonstrated that the GPT 3.5 Turbo LLM has the ability to evaluate code quality, showing a correlation with Sonar's metrics. However, there are specific aspects that differ in what the LLM measures compared to SonarQube. The GPT 4o version did not present the same results, diverging from the previous model and Sonar by assigning a high classification to codes that were assessed as lower quality. This study demonstrates the potential of LLMs in evaluating code quality. However, further research is necessary to investigate limitations such as LLM's cost, variability of outputs and explore quality characteristics not measured by traditional static analysis tools.
+PU  - ASSOC COMPUTING MACHINERY
+PI  - NEW YORK
+PA  - 1601 Broadway, 10th Floor, NEW YORK, NY, UNITED STATES
+SN  - 979-8-4007-1777-2
+DA  - 2024 
+PY  - 2024
+SP  - 103
+EP  - 113
+DO  - 10.1145/3701625.3701650
+AN  - WOS:001447433100011
+AD  - Univ Brasilia, Dept Comp Sci, Brasilia, DF, Brazil
+AD  - Banco Brasil, Diretoria Tecnol, Brasilia, DF, Brazil
+Y2  - 2025-04-18
+ER  -
+
+TY  - JOUR
+AU  - Bistarelli, Stefano
+AU  - Fiore, Marco
+AU  - Mercanti, Ivan
+AU  - Mongiello, Marina
+AU  - Xianfeng, Yao
+TI  - Usage of Large Language Model for Code Generation Tasks: A Review
+T2  - SN Computer Science
+M3  - Article
+AB  - Large Language Models have received a lot of attention in recent years due to their outstanding performance on various Natural Language Processing tasks. They can be used for lots of applications, including assistance in code generation tasks. Actual literature lacks an exhaustive analysis of the benefits and drawbacks of using a Large Language Model for the generation of simple and complex code. This paper aims to overcome the issue: we perform a Literature Review to explore the state-of-the-art of the proposed topic, answering 4 Research Questions. Using the PRISMA methodology, we reviewed 66 papers published between 2021 and 2023. Our analysis reveals Python’s dominance as the preferred language and identifies a significant research gap in addressing ethical constraints. Additionally, we provide insights into the performance of models such as GPT-4 and CodeLlama, and their comparative utility in tasks ranging from debugging to multi-turn program synthesis. The findings offer a foundation for future research aimed at optimizing LLMs for code generation.
+PU  - Springer Science and Business Media LLC
+SN  - 2661-8907
+DA  - 2025 
+PY  - 2025
+VL  - 6
+IS  - 6
+DO  - 10.1007/s42979-025-04241-5
+AN  - RC:156329771_S24
+Y2  - 2025-08-05
+ER  -
+
+TY  - CPAPER
+AU  - Shivashankar, Karthik
+AU  - Martini, Antonio
+ED  - Scanniello, G
+ED  - Lenarduzzi, V
+ED  - Romano, S
+ED  - Vegas, S
+ED  - Francese, R
+TI  - Enhancing Python Code Maintainability Through Large Language Model-Based Approaches
+T2  - PRODUCT-FOCUSED SOFTWARE PROCESS IMPROVEMENT, PROFES 2025
+M3  - Proceedings Paper
+CP  - 26th International Conference on Product Focused Software Process Improvement-PROFES-Annual
+CL  - Salerno, ITALY
+AB  - While Large Language Models (LLMs) increasingly assist in code generation, concerns persist regarding the maintainability of the code they producean aspect often overshadowed by functional correctness. Overlooking maintainability can contribute to technical debt and inflate long-term software costs.This research investigates whether targeted fine-tuning can enhance an LLMs ability to generate more maintainable Python code. We developed a approach involving the curation of custom datasets (from COMMITPACKFT and Code Alpaca Python subsets) specifically annotated for maintainability using metrics like Source Lines of Code (SLOC), Halstead Effort, and Maintainability Index (MI). A weak-to-strong generalization strategy was employed, using a smaller model (Phi 4 14B) to generate maintainability-focused examples for fine-tuning a larger model (QwenCoder2.5 32B Instruct) with parameter-efficient techniques.Evaluations revealed the fine-tuned model significantly reduced code complexity (Halstead Effort) and length (SLOC) compared to the original code samples. While the model preserved high functional similarity (verified by CodeBERTScore), results for the Maintainability Index metric were inconclusive in this evaluation. Performance on standard functional correctness benchmarks (HumanEval+, MBPP+) was largely comparable to the base model. Nevertheless, expert user feedback confirmed the fine-tuned models utility as a practical AI companion for code refactoring to improve maintainability.
+PU  - SPRINGER INTERNATIONAL PUBLISHING AG
+PI  - CHAM
+PA  - GEWERBESTRASSE 11, CHAM, CH-6330, SWITZERLAND
+SN  - 0302-9743
+SN  - 1611-3349
+SN  - 978-3-032-12088-5
+SN  - 978-3-032-12089-2
+DA  - 2026 
+PY  - 2026
+VL  - 16361
+SP  - 137
+EP  - 152
+DO  - 10.1007/978-3-032-12089-2_9
+AN  - WOS:001718768800009
+AD  - Univ Oslo, Dept Informat, Oslo, Norway
+Y2  - 2026-04-10
+ER  -
+
+TY  - CPAPER
+AU  - Vijayaraghavan, Prashanth
+AU  - Nitsure, Apoorva
+AU  - Mackin, Charles
+AU  - Shi, Luyao
+AU  - Ambrogio, Stefano
+AU  - Haran, Arvind
+AU  - Paruthi, Viresh
+AU  - Elzein, Ali
+AU  - Coops, Dan
+AU  - Beymer, David
+AU  - Baldwin, Tyler
+AU  - Degan, Ehsan
+A1  - ASSOC COMPUTING MACHINERY
+TI  - Chain-of-Descriptions: Improving Code LLMs for VHDL Code Generation and Summarization
+T2  - 2024 ACM/IEEE 6TH SYMPOSIUM ON MACHINE LEARNING FOR CAD, MLCAD 2024
+M3  - Proceedings Paper
+CP  - 6th Symposium on Machine Learning for CAD
+CL  - Snowbird, UT
+AB  - Large Language Models (LLMs) have become widely used across diverse NLP tasks and domains, demonstrating their adaptability and effectiveness. In the realm of Electronic Design Automation (EDA), LLMs show promise for tasks like Register-Transfer Level (RTL) code generation and summarization. However, despite the proliferation of LLMs for general code-related tasks, there's a dearth of research focused on evaluating and refining these models for hardware description languages (HDLs), notably VHDL. In this study, we evaluate the performance of existing code LLMs for VHDL code generation and summarization using various metrics and two datasets - VHDL-Eval and VHDL-Xform. The latter, an in-house dataset, aims to gauge LLMs' understanding of functionally equivalent code. Our findings reveal consistent underperformance of these models across different metrics, underscoring a significant gap in their suitability for this domain. To address this challenge, we propose Chain-of-Descriptions (CoDes), a novel approach to enhance the performance of LLMs for VHDL code generation and summarization tasks. CoDes involves generating a series of intermediate descriptive steps based on: (i) the problem statement for code generation, and (ii) the VHDL code for summarization. These steps are then integrated with the original input prompt (problem statement or code) and provided as input to the LLMs to generate the final output. Our experiments demonstrate that the CoDes approach significantly surpasses the standard prompting strategy across various metrics on both datasets. This method not only improves the quality of VHDL code generation and summarization but also serves as a framework for future research aimed at enhancing code LLMs for VHDL.
+PU  - ASSOC COMPUTING MACHINERY
+PI  - NEW YORK
+PA  - 1601 Broadway, 10th Floor, NEW YORK, NY, UNITED STATES
+SN  - 979-8-3503-6357-9
+SN  - 979-8-3503-6356-2
+DA  - 2024 
+PY  - 2024
+DO  - 10.1145/3670474.3685966
+AN  - WOS:001414843700028
+AD  - IBM Res, San Jose, CA 95120 USA
+AD  - IBM Corp, Austin, TX USA
+Y2  - 2025-03-01
+ER  -
+
+TY  - JOUR
+AU  - Dong, Shijia
+AU  - Zhao, Haoruo
+AU  - Harvey, Paul
+TI  - Code vs Serialized AST Inputs for LLM-Based Code Summarization: An Empirical Study
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Summarizing source code into natural language descriptions (code summarization) helps developers better understand program functionality and reduce the burden of software maintenance. Abstract Syntax Trees (ASTs), as opposed to source code, have been shown to improve summarization quality in traditional encoder-decoder-based code summarization models. However, most large language model (LLM)-based code summarization methods rely on raw code or only incorporate partial AST signals, meaning that the potential of complete AST representation has not been fully explored for LLMs. This paper presents AST(NIT), an AST augmentation and serialization method that preserves lexical details and encodes structural information into LLM-compatible sequences. Experiments with the LLaMA-3.1-8B model on the CodeXGLUE Python dataset show that the proposed serialized ASTs reduce the length of LLM inputs, require shorter training times, and achieve summarization quality comparable to existing approaches.
+PU  - CORNELL UNIV
+DA  - 2026 
+PY  - 2026
+DO  - arXiv:2602.06671
+AN  - PPRN:164632466
+AD  - Univ Glasgow, Glasgow City, Scotland
+Y2  - 2026-06-25
+ER  -
+
+TY  - JOUR
+AU  - Simoes, Igor Regis da Silva
+AU  - Venson, Elaine
+TI  - Evaluating Source Code Quality with Large Languagem Models: a comparative study
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Code quality is an attribute composed of various metrics, such as complexity, readability, testability, interoperability, reusability, and the use of good or bad practices, among others. Static code analysis tools aim to measure a set of attributes to assess code quality. However, some quality attributes can only be measured by humans in code review activities, readability being an example. Given their natural language text processing capability, we hypothesize that a Large Language Model (LLM) could evaluate the quality of code, including attributes currently not automatable. This paper aims to describe and analyze the results obtained using LLMs as a static analysis tool, evaluating the overall quality of code. We compared the LLM with the results obtained with the SonarQube software and its Maintainability metric for two Open Source Software (OSS) Java projects, one with Maintainability Rating A and the other B. A total of 1,641 classes were analyzed, comparing the results in two versions of models: GPT 3.5 Turbo and GPT 4o. We demonstrated that the GPT 3.5 Turbo LLM has the ability to evaluate code quality, showing a correlation with Sonar's metrics. However, there are specific aspects that differ in what the LLM measures compared to SonarQube. The GPT 4o version did not present the same results, diverging from the previous model and Sonar by assigning a high classification to codes that were assessed as lower quality. This study demonstrates the potential of LLMs in evaluating code quality. However, further research is necessary to investigate limitations such as LLM's cost, variability of outputs and explore quality characteristics not measured by traditional static analysis tools.
+PU  - CORNELL UNIV
+DA  - 2024 
+PY  - 2024
+DO  - arXiv:2408.07082
+AN  - PPRN:96403351
+AD  - Univ Brasilia, Banco Brasil, Brasilia, Brazil
+AD  - Univ Brasilia, Brasilia, DF, Brazil
+Y2  - 2024-10-07
+ER  -
+
+TY  - JOUR
+AU  - Abtahi, Seyed Moein
+AU  - Azim, Akramul
+TI  - Augmenting Large Language Models with Static Code Analysis for Automated Code Quality Improvements
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - This study examined code issue detection and revision automation by integrating Large Language Models (LLMs) such as OpenAI's GPT-3.5 Turbo and GPT-4o into software development workflows. A static code analysis framework detects issues such as bugs, vulnerabilities, and code smells within a large-scale software project. Detailed information on each issue was extracted and organized to facilitate automated code revision using LLMs. An iterative prompt engineering process is applied to ensure that prompts are structured to produce accurate and organized outputs aligned with the project requirements. Retrieval-augmented generation (RAG) is implemented to enhance the relevance and precision of the revisions, enabling LLM to access and integrate real-time external knowledge. The issue of LLM hallucinations - where the model generates plausible but incorrect outputs - is addressed by a custom-built "Code Comparison App," which identifies and corrects erroneous changes before applying them to the codebase. Subsequent scans using the static code analysis framework revealed a significant reduction in code issues, demonstrating the effectiveness of combining LLMs, static analysis, and RAG to improve code quality, streamline the software development process, and reduce time and resource expenditure.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2506.10330
+AN  - PPRN:123769983
+AD  - Ontario Tech Univ, Fac Engn & Appl Sci, Oshawa, ON, Canada
+Y2  - 2025-09-12
+ER  -
+
+TY  - CPAPER
+AU  - Aiura, Kazuki
+AU  - Morimoto, Ryota
+AU  - Sekine, Munenori
+AU  - Soejima, Yuji
+AU  - Miyoshi, Yu
+A1  - IEEE
+TI  - API-Aware Stepwise Prompting for LLM-based Workflow Code Generation
+T2  - 2025 25TH ASIA-PACIFIC NETWORK OPERATIONS AND MANAGEMENT SYMPOSIUM, APNOMS
+M3  - Proceedings Paper
+CP  - 25th Asia-Pacific Network Operations and Management Symposium-APNOMS
+CL  - Kaohsiung, TAIWAN
+AB  - The automation of network operations is often hindered by a shortage of personnel possessing specialized knowledge, including domain expertise, API proficiency, and programming skills. Although large language models (LLMs) have demonstrated potential in generating code from natural language, current methodologies encounter difficulties in producing accurate workflow code, particularly when confronted with extended sequences and intricate control flows.To mitigate these challenges, we propose an API-aware step-wise prompting method for LLM-based workflow code generation. This approach systematically decomposes the generation process into four steps: API selection, dataflow analysis, sequence diagram design, and workflow code generation. By employing this stepwise prompting method, the model is better equipped to manage API dependencies and control structures.Experimental results indicate that the inclusion and precise sequencing of intermediate steps markedly enhance generation accuracy. The proposed method consistently surpasses simpler baseline approaches, underscoring the efficacy of a structured methodology.
+PU  - IEEE
+PI  - NEW YORK
+PA  - 345 E 47TH ST, NEW YORK, NY 10017 USA
+SN  - 2576-8565
+SN  - 2576-8557
+SN  - 979-8-3315-5475-0
+SN  - 978-4-88552-356-4
+DA  - 2025 
+PY  - 2025
+AN  - WOS:001708878900024
+AD  - NTT Inc, Network Innovat Ctr, Tokyo, Japan
+Y2  - 2026-03-25
+ER  -
+
+TY  - CPAPER
+AU  - Bellur, Abhiram
+AU  - Batole, Fraol
+AU  - Ullah, Mohammed Raihan
+AU  - Dilhara, Malinda
+AU  - Zharov, Yaroslav
+AU  - Bryksin, Timofey
+AU  - Ishikawa, Kai
+AU  - Chen, Haifeng
+AU  - Morimoto, Masaharu
+AU  - Hosomi, Takeo
+AU  - Nguyen, Tien N.
+AU  - Rajan, Hridesh
+AU  - Tsantalis, Nikolaos
+AU  - Dig, Danny
+A1  - IEEE COMPUTER SOC
+TI  - Together We Are Better: LLM, IDE and Semantic Embedding to Assist Move Method Refactoring
+T2  - 2025 IEEE INTERNATIONAL CONFERENCE ON SOFTWARE MAINTENANCE AND EVOLUTION, ICSME
+M3  - Proceedings Paper
+CP  - 41st International Conference on Software Maintenance and Evolution-ICSME-Annual
+CL  - Auckland, NEW ZEALAND
+AB  - MOVEMETHOD is a hallmark refactoring. Despite a plethora of research tools that recommend which methods to move and where, these recommendations do not align with how expert developers perform MOVEMETHOD. Given the extensive training of Large Language Models and their reliance upon naturalness of code, they should expertly recommend which methods are misplaced in a given class and which classes are better hosts. Our formative study of 2016 LLM recommendations revealed that LLMs give expert suggestions, yet they are unreliable: up to 80% of the suggestions are hallucinations.We introduce the first LLM fully powered assistant for MOVEMETHOD refactoring that automates its whole end-to-end lifecycle, from recommendation to execution. We designed novel solutions that automatically filter LLM hallucinations using static analysis from IDEs and a novel workflow that requires LLMs to be self-consistent, critique, and rank refactoring suggestions. As MOVEMETHOD refactoring requires global, project-level reasoning, we solved the limited context size of LLMs by employing refactoring-aware retrieval augment generation (RAG). Our approach, MM-ASSIST, synergistically combines the strengths of the LLM, IDE, static analysis, and semantic relevance. In our thorough, multi-methodology empirical evaluation, we compare MM-ASSIST with the previous state-of-the-art approaches. MM-ASSIST significantly outperforms them: (i) on a benchmark widely used by other researchers, our Recall@1 and Recall@3 show a 1.7x improvement; (ii) on a corpus of 210 recent refactorings from Open-source software, our Recall rates improve by at least 2.4x. Lastly, we conducted a user study with 30 experienced participants who used MM- ASSIST to refactor their own code for one week. They rated 82.8% of MM-ASSIST recommendations positively. This shows that MM-ASSIST is both effective and useful.
+PU  - IEEE COMPUTER SOC
+PI  - LOS ALAMITOS
+PA  - 10662 LOS VAQUEROS CIRCLE, PO BOX 3014, LOS ALAMITOS, CA 90720-1264 USA
+SN  - 1063-6773
+SN  - 979-8-3315-9588-3
+SN  - 979-8-3315-9587-6
+DA  - 2025 
+PY  - 2025
+SP  - 430
+EP  - 442
+DO  - 10.1109/ICSME64153.2025.00046
+AN  - WOS:001831819900036
+AD  - Univ Colorado, Boulder, CO 80309 USA
+AD  - Tulane Univ, New Orleans, LA 70118 USA
+AD  - Amazon Web Serv, Seattle, WA USA
+AD  - JetBrains Res, Prague, Czech Republic
+AD  - NEC Corp Ltd, Tokyo, Japan
+AD  - NEC Labs Amer, Princeton, NJ USA
+AD  - Univ Texas Dallas, Richardson, TX 75083 USA
+AD  - Concordia Univ, Montreal, PQ, Canada
+M2  - JetBrains Res
+Y2  - 2026-08-29
+ER  -
+
+TY  - JOUR
+AU  - Icoz, Busra
+AU  - Biricik, Goksel
+TI  - Context-Aware Code Review Automation: A Retrieval-Augmented Approach
+T2  - APPLIED SCIENCES-BASEL
+M3  - Article
+AB  - Manual code review is essential for software quality, but often slows down development cycles due to the high time demands on developers. In this study, we propose an automated solution for Python (version 3.13) projects that generates code review comments by combining Large Language Models (LLMs) with Retrieval-Augmented Generation (RAG). To achieve this, we first curated a dataset from GitHub pull requests (PRs) using the GitHub REST Application Programming Interface (API) (version 2022-11-28) and classified comments into semantic categories using a semi-supervised Support Vector Machine (SVM) model. During the review process, our system uses a vector database to retrieve the top-k most relevant historical comments, providing context for a diverse spectrum of open-weights LLMs, including DeepSeek-Coder-33B, Qwen2.5-Coder-32B, Codestral-22B, CodeLlama-13B, Mistral-Instruct-7B, and Phi-3-Mini. We evaluated the system using a multi-step validation that combined standard metrics (BLEU-4, ROUGE-L, cosine similarity) with an LLM-as-a-Judge approach, and verified the results through targeted human review to ensure consistency with expert standards. The findings show that retrieval augmentation improves feedback relevance for larger models, with DeepSeek-Coder's alignment score increasing by 17.9% at a retrieval depth of k = 3. In contrast, smaller models such as Phi-3-Mini suffered from context collapse, where too much context reduced accuracy. To manage this trade-off, we built a hybrid expert system that routes each task to the most suitable model. Our results indicate that the proposed approach improved performance by 13.2% compared to the zero-shot baseline (k = 0). In addition, our proposed system reduces hallucinations and generates comments that closely align with the standards expected from the experts.
+PU  - MDPI
+PI  - BASEL
+PA  - MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND
+SN  - 2076-3417
+DA  - 2026 FEB 13
+PY  - 2026
+VL  - 16
+IS  - 4
+C7  - 1875
+DO  - 10.3390/app16041875
+AN  - WOS:001699831000001
+AD  - Yildiz Tech Univ, Dept Comp Engn, TR-34220 Istanbul, Turkiye
+AD  - ING Netherlands, NL-1102 CT Amsterdam, Netherlands
+M2  - ING Netherlands
+Y2  - 2026-03-06
+ER  -
+
+TY  - JOUR
+AU  - Wei, Zhiyuan
+AU  - Sun, Jing
+AU  - Zhang, Zijian
+AU  - Hou, Zhe
+AU  - Zhao, Zixiao
+TI  - Adaptive Plan-Execute Framework for Smart Contract Security Auditing
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Large Language Models (LLMs) have shown great promise in code analysis and auditing; however, they still struggle with hallucinations and limited context-aware reasoning. We introduce SmartAuditFlow, a novel Plan-Execute framework that enhances smart contract security analysis through dynamic audit planning and structured execution. Unlike conventional LLM-based auditing approaches that follow fixed workflows and predefined steps, SmartAuditFlow dynamically generates and refines audit plans based on the unique characteristics of each smart contract. It continuously adjusts its auditing strategy in response to intermediate LLM outputs and newly detected vulnerabilities, ensuring a more adaptive and precise security assessment. The framework then executes these plans step by step, applying a structured reasoning process to enhance vulnerability detection accuracy while minimizing hallucinations and false positives. To further improve audit precision, SmartAuditFlow integrates iterative prompt optimization and external knowledge sources, such as static analysis tools and Retrieval-Augmented Generation (RAG). This ensures audit decisions are contextually informed and backed by real-world security knowledge, producing comprehensive security reports. Extensive evaluations across multiple benchmarks demonstrate that SmartAuditFlow outperforms existing methods, achieving 100 percent accuracy on common and critical vulnerabilities, 41.2 percent accuracy for comprehensive coverage of known smart contract weaknesses in real-world projects, and successfully identifying all 13 tested CVEs. These results highlight SmartAuditFlow's scalability, cost-effectiveness, and superior adaptability over traditional static analysis tools and contemporary LLM-based approaches, establishing it as a robust solution for automated smart contract auditing.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2505.15242
+AN  - PPRN:123473931
+AD  - Beijing Inst Technol, Beijing, Peoples R China
+AD  - Univ Auckland, Auckland, New Zealand
+AD  - Griffith Univ, Brisbane, Qld, Australia
+Y2  - 2025-08-21
+ER  -
+
+TY  - JOUR
+AU  - Kongari, Sai Shiva Reddy
+T2  - Frontiers in Emerging Artificial Intelligence and Machine Learning
+M3  - Article
+AB  - Large Language Models are increasingly used in enterprise software development for code generation, debugging, refactoring, documentation, and test creation. Their adoption has changed the practical workflow of software engineering by allowing developers to obtain implementation suggestions, boilerplate code, test scaffolds, configuration files, and architectural explanations directly from conversational systems. However, LLM-generated code may contain security vulnerabilities, hallucinated APIs, outdated dependencies, weak authorization logic, insecure default configurations, and implementation patterns that conflict with organizational policies. These risks are especially significant in enterprise environments where software systems are connected to sensitive data, identity platforms, regulated workflows, cloud infrastructure, and third-party integrations. Existing approaches such as secure prompting and manual code review can improve generated outputs, but prompt instructions alone are insufficient because general-purpose LLMs may not have access to current enterprise standards, approved libraries, secure coding rules, deployment constraints, or project-specific architecture.This paper proposes RAG-SecCode, a retrieval-augmented secure coding framework that grounds LLM-assisted software development in authoritative and organization-specific security knowledge. The framework integrates retrieval-augmented generation, secure coding policies, vulnerability knowledge bases, dependency governance rules, static and dynamic validation checks, and human-in-the-loop review. RAG-SecCode is designed to improve code security by supplying the model with relevant secure coding context before generation and by validating the generated output after generation. The study conceptually evaluates whether retrieval-augmented secure context can improve generated code quality compared with baseline prompting and secure prompting alone. The evaluation design measures vulnerability count, CWE mapping, hallucinated API frequency, dependency risk, policy compliance, test inclusion, and human reviewer approval rate.The paper contributes a practical framework for enterprise LLM software development by connecting recent research on vulnerability detection, LLM-based code generation, retrieval-augmented generation, secure repair, and static analysis. It argues that secure code generation should not be treated only as a prompting problem but as a governed software engineering workflow. RAG-SecCode provides a structured approach for reducing insecure and hallucinated LLM-generated code through contextual retrieval, rule-based validation, security-aware review, and continuous feedback.
+PU  - Emerging Innovations Society: Science, Technology, and Social Studies
+SN  - 2978-3704
+DA  - 2026 
+PY  - 2026
+VL  - 03
+IS  - 06
+SP  - 08
+EP  - 23
+DO  - 10.64917/feaiml/volume03issue06-01
+AN  - RC:170980133_S24
+AD  - Univ Cumberlands, Dept Informat Technol, Williamsburg, KY 40769, USA
+M2  - Univ Cumberlands
+Y2  - 2026-06-21
+ER  -
+
+TY  - JOUR
+AU  - Majeed, Esra Zuhair
+T2  - SISTEMASI
+M3  - Article
+AB  - Requirements elicitation is a critical activity in software engineering, as incomplete, ambiguous, or inconsistent requirements can adversely affect software quality and project outcomes. Although Large Language Models (LLMs) have demonstrated considerable potential for supporting Requirements Engineering, conventional prompting approaches typically rely on direct or predefined interactions and lack systematic mechanisms for identifying and resolving information gaps during elicitation. This study proposes Adaptive Context-Driven Prompting (ACDP), an iterative framework designed to improve LLM-supported requirements elicitation through context preservation and gap-driven refinement. ACDP progressively constructs an Elicitation Context (EC) that maintains project objectives, stakeholders, constraints, assumptions, and previously elicited requirements. In parallel, a Requirement Gap Matrix (RGM) systematically identifies missing, partial, ambiguous, and conflicting information and transforms these gaps into targeted re-elicitation prompts for subsequent LLM interactions. The framework was evaluated using public software requirements documents from the PURE dataset and compared with Zero-Shot Prompting and Fixed Multi-Step Prompting under controlled LLM settings. Performance was assessed using reference-based Precision, Recall, and F1-score, together with requirement-quality dimensions including completeness, correctness, consistency, clarity, relevance, ambiguity, and redundancy. Experimental results demonstrate that ACDP achieved a Precision of 0.93, Recall of 0.92, and F1-score of 0.92, outperforming both baseline prompting approaches while also improving requirement completeness, correctness, and overall quality. These findings demonstrate that combining persistent elicitation context with explicit gap diagnosis provides a systematic and effective mechanism for improving LLM-assisted requirements elicitation and offers practical support for requirements analysts in complex software projects.
+PU  - Universitas Islam Indragiri
+SN  - 2540-9719
+DA  - 2026 
+PY  - 2026
+VL  - 15
+IS  - 8
+SP  - 3350
+EP  - 3350
+DO  - 10.32520/stmsi.v15i8.6850
+AN  - RC:173845715_S24
+Y2  - 2026-09-17
+ER  -
+
+TY  - CPAPER
+AU  - Wang, Yu
+AU  - Liu, Xin
+AU  - Lu, Xuesong
+AU  - Zhou, Aoying
+A1  - IEEE
+TI  - iiPCS: Intent-Based In-Context Learning for Project-Specific Code Summarization
+T2  - 2024 INTERNATIONAL JOINT CONFERENCE ON NEURAL NETWORKS, IJCNN 2024
+M3  - Proceedings Paper
+CP  - International Joint Conference on Neural Networks (IJCNN)
+CL  - Yokohama, JAPAN
+AB  - Recent years have witnessed growing research interest in automatic source code summarization due to its beneficial potential in software development and maintenance tasks. In the past few years, various deep learning models have been developed to leverage structural and textual features in the code for generating meaningful and succinct summaries. However, the summaries generated by traditional deep learning models often have syntax errors or are meaningless. The emergence of large language models provides an opportunity to overcome the problem. However, the quality of the summaries largely depends on the in-context learning examples of code-summary pairs. In this work, we develop iiPCS, an LLM-based method for code summarization. We retrieve relevant code-summary pairs as incontext learning examples from the same project of the target code, which ensures to generate more project-specific summaries, and use the predicted intent of the target code to pick few-shot examples, which ensures to generate summaries with the correct intent. Experimental results show that iiPCS can generate code summaries with higher quality compared to traditional methods using deep learning and recent methods using LLMs.
+PU  - IEEE
+PI  - NEW YORK
+PA  - 345 E 47TH ST, NEW YORK, NY 10017 USA
+SN  - 2161-4393
+SN  - 979-8-3503-5932-9
+SN  - 979-8-3503-5931-2
+DA  - 2024 
+PY  - 2024
+DO  - 10.1109/IJCNN60899.2024.10650776
+AN  - WOS:001392668200047
+AD  - East China Normal Univ, Shanghai, Peoples R China
+Y2  - 2025-03-05
+ER  -
+
+TY  - JOUR
+AU  - Lakshmi, A. Sri
+AU  - Sigamany, E. S. Sharmila
+AU  - Traisa, Roopa
+AU  - Kumar, Raman
+AU  - Reddy, Karaka Ramakrishna
+AU  - Chohan, Jasgurpreet Singh
+AU  - Smerat, Aseel
+TI  - Enhancing Code Quality Through Automated Refactoring Using Transformer-Based Language Models
+T2  - INTERNATIONAL JOURNAL OF ADVANCED COMPUTER SCIENCE AND APPLICATIONS
+M3  - Article
+AB  - Maintaining high-quality source code is crucial for software reliability, scalability, and maintainability. Traditional refactoring methods, which involve manual code improvement or rule-based automation, often fall short due to their inability to understand the contextual semantics of code. These approaches are rigid, language-specific, and prone to inconsistencies, especially in large and complex codebases. As a result, developers spend significant time and effort identifying code smells, restructuring poorly written segments, and ensuring behavior preservation shows an accuracy of 97%. To address these limitations, this study proposes an automated code refactoring framework powered by Transformer-based language models. Leveraging models such as CodeT5, which are pre-trained on massive code corpora, this approach captures both syntax and semantic patterns to suggest intelligent, context-aware code transformations. The model is fine-tuned using a curated dataset of original and refactored code pairs to learn efficient refactoring strategies. The methodology involves preprocessing raw source code, tokenizing it for model input, and generating improved versions of the code using the trained Transformer model. Output suggestions are validated using Abstract Syntax Tree (AST) analysis and unit testing to ensure behavioral equivalence. Code quality improvements are quantified using metrics like maintainability index, cyclomatic complexity, and duplication rate. Experimental results demonstrate that the proposed method significantly enhances code readability and maintainability while reducing developer effort, outperforming traditional rule-based refactoring tools.
+PU  - SCIENCE & INFORMATION SAI ORGANIZATION LTD
+PI  - WEST YORKSHIRE
+PA  - 19 BOLLING RD, BRADFORD, WEST YORKSHIRE, 00000, ENGLAND
+SN  - 2158-107X
+SN  - 2156-5570
+DA  - 2025 
+PY  - 2025
+VL  - 16
+IS  - 9
+SP  - 545
+EP  - 554
+AN  - WOS:001592952500001
+AD  - Koneru Lakshmaiah Educ Fdn, Dept English, Vaddeswaram, AP, India
+AD  - Koneru Lakshmaiah Educ Fdn, Dept English, Vaddeswaram, AP, India
+AD  - JAIN Deemed Univ, Sch Management, Dept Management, UG, Bangalore, Karnataka, India
+AD  - Rayat Bahra Univ, Univ Sch Mech Engn, Mohali, India
+AD  - Sohar Univ, Fac Engn, Sohar, Oman
+AD  - B V Raju Inst Technol, Dept BS&H, Medak, India
+AD  - Marwadi Univ, Res Ctr, Fac Engn & Technol, Dept Mech Engn, Rajkot 360003, Gujarat, India
+AD  - Al Ahliyya Amman Univ, Fac Educ Sci, Amman 19328, Jordan
+AD  - Saveetha Inst Med & Tech Sci, Saveetha Sch Engn, Dept Biosci, Chennai 602105, India
+M2  - Rayat Bahra Univ
+M2  - B V Raju Inst Technol
+Y2  - 2025-10-19
+ER  -
+
+TY  - JOUR
+AU  - Chen, Sibei
+AU  - Fan, Ju
+AU  - Wu, Bin
+AU  - Tang, Nan
+AU  - Deng, Chao
+AU  - Wang, Pengyi
+AU  - Li, Ye
+AU  - Tan, Jian
+AU  - Li, Feifei
+AU  - Zhou, Jingren
+AU  - Du, Xiaoyong
+TI  - Automatic Database Configuration Debugging using Retrieval-Augmented Language Models
+T2  - Arxiv
+M3  - preprint
+C8  - 2
+AB  - Database management system (DBMS) configuration debugging, e.g., diagnosing poorly configured DBMS knobs and generating troubleshooting recommendations, is crucial in optimizing DBMS performance. However, the configuration debugging process is tedious and, sometimes challenging, even for seasoned database administrators (DBAs) with sufficient experience in DBMS configurations and good understandings of the DBMS internals (e.g., MySQL or Oracle). To address this difficulty, we propose Andromeda, a framework that utilizes large language models (LLMs) to enable automatic DBMS configuration debugging. Andromeda serves as a natural surrogate of DBAs to answer a wide range of natural language (NL) questions on DBMS configuration issues, and to generate diagnostic suggestions to fix these issues. Nevertheless, directly prompting LLMs with these professional questions may result in overly generic and often unsatisfying answers. To this end, we propose a retrieval-augmented generation (RAG) strategy that effectively provides matched domain-specific contexts for the question from multiple sources. They come from related historical questions, troubleshooting manuals and DBMS telemetries, which significantly improve the performance of configuration debugging. To support the RAG strategy, we develop a document retrieval mechanism addressing heterogeneous documents and design an effective method for telemetry analysis. Extensive experiments on real-world DBMS configuration debugging datasets show that Andromeda significantly outperforms existing solutions.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2412.07548
+AN  - PPRN:119818864
+AD  - Renmin Univ China, Beijing, Peoples R China
+AD  - Alibaba Cloud Comp, Hangzhou, Peoples R China
+AD  - HKUST GZ, Guangzhou, Peoples R China
+AD  - HKUST, Hong Kong, Peoples R China
+AD  - Alibaba Cloud Comp, Sunnyvale, CA, USA
+M2  - Alibaba Cloud Comp
+M2  - HKUST GZ
+M2  - HKUST
+M2  - Alibaba Cloud Comp
+Y2  - 2025-03-15
+ER  -
+
+TY  - CPAPER
+AU  - Bender, Adrian
+AU  - Nicolet, Santiago
+ED  - Simian, D
+ED  - Stoica, LF
+TI  - Pretrained Language Models for Automatic Source Code Generation: Evaluation and Application
+T2  - MODELLING AND DEVELOPMENT OF INTELLIGENT SYSTEMS, MDIS 2024
+M3  - Proceedings Paper
+CP  - 9th International Conference on Modelling and Development of Intelligent Systems-MDIS
+CL  - Sibiu, ROMANIA
+AB  - This study explores the capabilities of the ChatGPT artificial intelligence language model, with the GPT-3 architecture developed by OpenAI, in the task of generating JavaScript source code from Spanish instructions. Transformer language models, as exemplars of deep learning, are effective at learning contextual representations of words and phrases. This allows the model to understand not only individual programming terms but also how they combine into larger structures such as loops and functions. Through a set of unique programming feature requests from a selected set of cases prepared for this work, we examine the model's ability to transcribe these high-level specifications into executable and functional source code. The results of the model were evaluated using a compiler, seeking an objective evaluation of the functionality of the generated code in predefined unit test cases. Overall, the model achieves 100% compilable code and 90% successful individual problem resolution. This work explores the intersection of AI and programming, paving the way for effective automation of code development from sentences in Spanish. While our analysis is centered on Spanish, the insights gained could be relevant for other non-English languages as well. It is expected that this work will contribute to the growing body of literature focusing on code generation and natural language understanding in AI language models.
+PU  - SPRINGER INTERNATIONAL PUBLISHING AG
+PI  - CHAM
+PA  - GEWERBESTRASSE 11, CHAM, CH-6330, SWITZERLAND
+SN  - 1865-0929
+SN  - 1865-0937
+SN  - 978-3-031-87385-0
+SN  - 978-3-031-87386-7
+DA  - 2025 
+PY  - 2025
+VL  - 2486
+SP  - 90
+EP  - 104
+DO  - 10.1007/978-3-031-87386-7_7
+AN  - WOS:001757471800007
+AD  - Univ Salvador, C1023, Buenos Aires, DF, Argentina
+M2  - Univ Salvador
+Y2  - 2026-06-19
+ER  -
+
+TY  - JOUR
+AU  - Zhang, Hang
+AU  - Shen, Yanxin
+AU  - Wang, Lun
+AU  - Shi, Chuanqi
+AU  - Du, Shaoshuai
+AU  - Tao, Yiyi
+AU  - Shen, Yixian
+TI  - Comparative Analysis of Large Language Models for Context-Aware Code Completion using SAFIM Framework
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - The advent of Large Language Models (LLMs) has revolutionized code completion, transforming it into a more intelligent and context-aware feature in modern integrated development environments. These advancements have significantly enhanced developers' ability to write efficient and error-free code. This study evaluates the performance of several chat-based LLMs, including Gemini 1.5 Flash, Gemini 1.5 Pro, GPT-4o, GPT-4o-mini, and GPT-4 Turbo, using the Syntax-Aware Fill-in-the-Middle (SAFIM) dataset. This benchmark is specifically designed to assess models' capabilities in syntax-sensitive code generation. Performance metrics, such as cosine similarity with ground-truth completions and latency, were employed to measure both accuracy and efficiency. The findings reveal substantial differences in the models' code completion abilities, offering valuable insights into their respective strengths and weaknesses. This work provides a comparative analysis that underscores the trade-offs between accuracy and speed, establishing a benchmark for future advancements in LLM-based code completion.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2502.15243
+AN  - PPRN:121806279
+AD  - Univ Calif San Diego, La Jolla, CA 92093, USA
+AD  - Simon Fraser Univ, Burnaby, BC, Canada
+AD  - Duke Univ, , North Calif, Durham, NC, USA
+AD  - Univ Amsterdam, Amsterdam, Netherlands
+AD  - Johns Hopkins Univ, Baltimore, MD, USA
+M2  - Univ Calif San Diego
+M2  - Duke Univ
+Y2  - 2025-08-07
+ER  -
+
+TY  - BOOK
+AU  - Brahman, Danny
+Z2  -  
+TI  - Evaluation and Distillation of Source Code Generation Tasks by Large Language Models
+M3  - Dissertation/Thesis
+SN  - 9798197877925
+DA  - 2026 
+PY  - 2026
+AN  - PQDT:172078621
+AD  - University of Denver, Computer Science, Colorado, United States
+M2  - University of Denver
+ER  -
+
+TY  - DATA
+AU  - Shekhar, Diwanshu
+AU  - Mahoor, Mohammad
+TI  - CodeQual: A dataset for fine-tuning Large Language Models for code quality assessment task
+T2  - Zenodo
+M3  - Data set
+AB  - Copyright: Creative Commons Attribution 4.0 International
+DA  - 2024 
+PY  - 2024
+DO  - 10.5281/ZENODO.11062806
+AN  - DRCI:DATA2024104029773987
+AD  - University of Denver, USA
+M2  - University of Denver
+Y2  - 2024-12-07
+ER  -
+
+TY  - DATA
+AU  - Shekhar, Diwanshu
+AU  - Mahoor, Mohammad
+TI  - CodeQual: A dataset for fine-tuning Large Language Models for code quality assessment task
+T2  - Zenodo
+M3  - Data set
+AB  - Copyright: Creative Commons Attribution 4.0 International
+DA  - 2024 
+PY  - 2024
+DO  - 10.5281/ZENODO.11062805
+AN  - DRCI:DATA2024104029773986
+AD  - University of Denver, USA
+M2  - University of Denver
+Y2  - 2024-12-07
+ER  -
+
+TY  - CPAPER
+AU  - Rahman, Imranur
+AU  - Rahman, Md Rayhanur
+A1  - IEEE COMPUTER SOC
+TI  - Relative Positioning Based Code Chunking Method For Rich Context Retrieval In Repository Level Code Completion Task With Code Language Model
+T2  - 2025 40TH IEEE/ACM INTERNATIONAL CONFERENCE ON AUTOMATED SOFTWARE ENGINEERING WORKSHOPS, ASEW
+M3  - Proceedings Paper
+CP  - 40th International Conference on Automated Software Engineering-ASE
+CL  - SOUTH KOREA
+AB  - Code completion can help developers improve efficiency and ease the development lifecycle. Although code completion is available in modern integrated development environments (IDEs), research lacks in determining what makes a good context for code completion based on the information available to the IDEs for the large language models (LLMs) to perform better. In this paper, we describe an effective context collection strategy to assist the LLMs in performing better at code completion tasks. The key idea of our strategy is to preprocess the repository into smaller code chunks and later use syntactic and semantic similarity-based code chunk retrieval with relative positioning. We found that code chunking and relative positioning of the chunks in the final context improve the performance of code completion tasks.
+PU  - IEEE COMPUTER SOC
+PI  - LOS ALAMITOS
+PA  - 10662 LOS VAQUEROS CIRCLE, PO BOX 3014, LOS ALAMITOS, CA 90720-1264 USA
+SN  - 2151-0830
+SN  - 979-8-3315-8504-4
+SN  - 979-8-3315-8503-7
+DA  - 2025 
+PY  - 2025
+SP  - 379
+EP  - 382
+DO  - 10.1109/ASEW67777.2025.00077
+AN  - WOS:001795671300060
+AD  - N Carolina State Univ, Raleigh, NC 27695 USA
+AD  - Univ Alabama, Tuscaloosa, AL USA
+Y2  - 2026-07-16
+ER  -
+
+TY  - JOUR
+AU  - Rahman, Imranur
+AU  - Rahman, Md Rayhanur
+TI  - Relative Positioning Based Code Chunking Method For Rich Context Retrieval In Repository Level Code Completion Task With Code Language Model
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Code completion can help developers improve efficiency and ease the development lifecycle. Although code completion is available in modern integrated development environments (IDEs), research lacks in determining what makes a good context for code completion based on the information available to the IDEs for the large language models (LLMs) to perform better. In this paper, we describe an effective context collection strategy to assist the LLMs in performing better at code completion tasks. The key idea of our strategy is to preprocess the repository into smaller code chunks and later use syntactic and semantic similarity-based code chunk retrieval with relative positioning. We found that code chunking and relative positioning of the chunks in the final context improve the performance of code completion tasks.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2510.08610
+AN  - PPRN:160613769
+AD  - North Carolina State Univ, Raleigh, NC 27695, USA
+AD  - Univ Alabama, Tuscaloosa, AL, USA
+M2  - North Carolina State Univ
+Y2  - 2026-02-07
+ER  -
+
+TY  - JOUR
+AU  - Gao, Xinyu
+AU  - Xiong, Yun
+AU  - Wang, Deze
+AU  - Guan, Zhenhan
+AU  - Shi, Zejian
+AU  - Wang, Haofen
+AU  - Li, Shanshan
+TI  - Preference-Guided Refactored Tuning for Retrieval Augmented Code Generation
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Retrieval-augmented code generation utilizes Large Language Models as the generator and significantly expands their code generation capabilities by providing relevant code, documentation, and more via the retriever. The current approach suffers from two primary limitations: 1) information redundancy. The indiscriminate inclusion of redundant information can result in resource wastage and may misguide generators, affecting their effectiveness and efficiency. 2) preference gap. Due to different optimization objectives, the retriever strives to procure code with higher ground truth similarity, yet this effort does not substantially benefit the generator. The retriever and the generator may prefer different golden code, and this gap in preference results in a suboptimal design. Additionally, differences in parameterization knowledge acquired during pre-training result in varying preferences among different generators. To address these limitations, in this paper, we propose RRG (Retrieve, Refactor, Generate), a novel framework for effective and efficient code generation. This framework introduces a code refactorer module between the retriever and the generator to bridge them. The refactoring process transforms the raw retrieved code into a more concise, efficient, and model-friendly version. It eliminates redundant information and noise, reducing the input length. Consequently, the generator receives higher-quality context, enabling it to produce more accurate results with lower inference costs. We conducted comprehensive experiments on multiple datasets. In the experiments, we confirmed the existence of a preference gap between the retriever and the generator, and RRG effectively bridges this gap. Specifically, RRG achieved significant performance improvements, with increases of up to 28% on EM, 13% on BLEU, and 6.8% on CodeBLEU.
+PU  - CORNELL UNIV
+DA  - 2024 
+PY  - 2024
+DO  - arXiv:2409.15895
+AN  - PPRN:98864152
+AD  - Fudan Univ, Sch Comp Sci, Shanghai Key Lab Data Sci, Shanghai, Peoples R China
+AD  - Natl Univ Def Technol, Hunan, Hunan, Peoples R China
+AD  - Tongji Univ, Coll Design & Innovat, Shanghai, Peoples R China
+Y2  - 2024-10-08
+ER  -
+
+TY  - JOUR
+AU  - Abdinabiev, Aslan Safarovich
+AU  - Jung, Eunseo
+AU  - Lee, Byungjeong
+TI  - Utilizing Dynamic Context and Static Analysis for Agent-Based Automated Program Repair
+T2  - IEEE ACCESS
+M3  - Article
+AB  - Automated Program Repair (APR) addresses the challenge of reducing software maintenance costs and improving software reliability. While recent advances in Large Language Models (LLMs) achieved measurable improvements in code generation tasks, their application to program repair faces specific challenges including limited context awareness, repetitive patch generation, and inability to learn from failed repair attempts. In this paper, we present a novel agent-based automated program repair approach that orchestrates specialized LLM agents with dynamic context management to iteratively refine and generate patches. Our approach introduces an agent-based architecture with a Context Updater, a Generator, and an Overfitting Detector, which work together with a comprehensive static analysis tool suite to gather relevant repair context, generate diverse patches, learn from failed attempts, and prevent overfitting solutions. The architecture employs a vector database powered by an embedding model for semantic code search, maintains a context pool (static and dynamic modules) for context management, and implements intelligent hypothesis tracking to avoid redundant repairs. We evaluate our approach on Defects4J and SWE-Bench Lite with multiple LLM backends under both perfect and automated fault localization settings. Our approach correctly fixes up to 365 and 87 bugs on Defects4J and SWE-Bench Lite respectively, generalizes across models, with open-source models achieving up to 252 correct fixes, and retains 69.7% of perfect-FL performance under automated fault localization. The approach is particularly effective on complex multi-function bugs, fixing up to 53 on Defects4J and 10 on SWE-Bench Lite.
+PU  - IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC
+PI  - PISCATAWAY
+PA  - 445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA
+SN  - 2169-3536
+DA  - 2026 
+PY  - 2026
+VL  - 14
+SP  - 71821
+EP  - 71835
+DO  - 10.1109/ACCESS.2026.3691783
+AN  - WOS:001767268200024
+AD  - Univ Seoul, Dept Comp Sci & Engn, Seoul 02504, South Korea
+Y2  - 2026-05-22
+ER  -
+
+TY  - JOUR
+AU  - Yang, Yixiao
+TI  - Improving Code Completion by Solving Data Inconsistencies in the Source Code with a Hierarchical Language Model
+T2  - ELECTRONICS
+M3  - Article
+AB  - In the field of software engineering, applying language models to the token sequence of source code is the state-of-the-art approach to building a code recommendation system. When applying language models to source code, it is difficult for state-of-the-art language models to deal with the data inconsistency problem, which is caused by the free naming conventions of source code. It is common for user-defined variables or methods with similar semantics in source code, to have different names in different projects. This means that a model trained on one project may encounter many words the model has never seen before during another project. Those freely named variables or functions in the code will bring difficulties to the processes of training and prediction and cause a data inconsistency problem between projects. However, we discover that the syntax tree of source code has hierarchical structures. This code structure has strong regularity in different projects and can be used to combat data inconsistency. In this paper, we propose a novel Hierarchical Language Model (HLM) to improve the robustness of the state-of-the-art recurrent language model, in order to be able to deal with data inconsistency between training and testing. The newly proposed HLM takes the hierarchical structure of the code tree into consideration to predict code. The proposed HLM method generates the embedding for each sub-tree according to hierarchies and collects the embedding of each sub-tree in context, to predict the next piece of code. The experiments on inner-project and cross-project datasets indicate that the newly proposed HLM method performs better than the state-of-the-art recurrent language model in dealing with the data inconsistency between training and testing, and achieves an average improvement in prediction accuracy of 11.2%.
+PU  - MDPI
+PI  - BASEL
+PA  - MDPI AG, Grosspeteranlage 5, CH-4052 BASEL, SWITZERLAND
+SN  - 2079-9292
+DA  - 2023 APR
+PY  - 2023
+VL  - 12
+IS  - 7
+C7  - 1576
+DO  - 10.3390/electronics12071576
+AN  - WOS:000969601700001
+AD  - Capital Normal Univ, Coll Informat Engn, Beijing 100048, Peoples R China
+Y2  - 2023-04-28
+ER  -
+
+TY  - JOUR
+AU  - Anonymous
+TI  - Artifact for "Assumption Mining: Extracting and Updating Implicit Requirements in LLM Code Generation"
+T2  - Zenodo
+M3  - Software
+AB  - Replication package for "Assumption Mining: Extracting and Updating Implicit Requirements in LLM��Code Generation" (ASE 2026 submission). Contains: (1) the AssumptionMiner source library����(assumption_miner/), (2) all experiment scripts for RQ1���RQ3 (scripts/), (3) the AmbigBench benchmark�� - 180 tasks with 678 LLM-assisted annotations with human review (benchmark_200.json) and a 100-task��adaptability benchmark (benchmark_large.json), and (4) pre-computed results for all three research��questions. See REPLICATION.md for reproduction instructions. Copyright: Creative Commons Attribution 4.0 International
+DA  - 2026 
+PY  - 2026
+DO  - 10.5281/ZENODO.19242915
+AN  - DRCI:DATA2026083035732141
+Y2  - 2026-07-30
+ER  -
+
+TY  - JOUR
+AU  - Anonymous
+TI  - Artifact for "Assumption Mining: Extracting and Updating Implicit Requirements in LLM Code Generation"
+T2  - Zenodo
+M3  - Software
+AB  - Replication package for "Assumption Mining: Extracting and Updating Implicit Requirements in LLM��Code Generation" (ASE 2026 submission). Contains: (1) the AssumptionMiner source library����(assumption_miner/), (2) all experiment scripts for RQ1���RQ3 (scripts/), (3) the AmbigBench benchmark�� - 180 tasks with 678 LLM-assisted annotations with human review (benchmark_200.json) and a 100-task��adaptability benchmark (benchmark_large.json), and (4) pre-computed results for all three research��questions. See REPLICATION.md for reproduction instructions. Copyright: Creative Commons Attribution 4.0 International
+DA  - 2026 
+PY  - 2026
+DO  - 10.5281/ZENODO.19242914
+AN  - DRCI:DATA2026083035732140
+Y2  - 2026-07-30
+ER  -
+
+TY  - JOUR
+AU  - Yang, Zezhou
+AU  - Chen, Sirong
+AU  - Gao, Cuiyun
+AU  - Li, Zhenhao
+AU  - Hu, Xing
+AU  - Liu, Kui
+AU  - Xia, Xin
+TI  - An Empirical Study of Retrieval-Augmented Code Generation: Challenges and Opportunities
+T2  - ACM TRANSACTIONS ON SOFTWARE ENGINEERING AND METHODOLOGY
+M3  - Article
+AB  - Code generation aims to automatically generate code snippets of specific programming language according to natural language descriptions. The continuous advancements in deep learning, particularly pre-trained models, have empowered the code generation task to achieve remarkable performance. One main challenge of pre-trained models for code generation is the semantic gap between developers' natural language requirements and source code. To address the issue, prior studies typically adopt a retrieval-augmented framework for the task, where the similar code snippets collected by a retrieval process can be leveraged to help understand the requirements and provide guidance for the generation process. In a retrieval-augmented framework, similar data can be retrieved from the database using a retrieval algorithm, and original input data can be fused with retrieved data by different fusion strategies. However, there is a lack of systematic study on the application of this framework for code generation, including the impact of the final generated results and the specific usage of the framework. In this article, we choose three popular pre-trained code models, namely CodeGen, UniXcoder, and CodeT5, to assess the impact of the quality and utilization of retrieved code on the retrieval-augmented framework. Our analysis shows that the retrieval-augmented framework is beneficial for improving the performance of the existing pre-trained models. We also provide suggestions on the utilization of the retrieval-augmented code generation framework: BM25 and Sequential Integration Fusion are recommended due to their convenience and superior performance. Sketch Filling Fusion, which extracts a sketch of relevant code, could help the model improve its performance further. Additionally, we conduct experiments to investigate the influence of the retrieval-augmented framework on large language models for code generation, showing the effectiveness of the framework, and we discuss the tradeoff between performance improvement and computational costs in each phase within the framework.
+PU  - ASSOC COMPUTING MACHINERY
+PI  - NEW YORK
+PA  - 1601 Broadway, 10th Floor, NEW YORK, NY USA
+SN  - 1049-331X
+SN  - 1557-7392
+DA  - 2025 SEP
+PY  - 2025
+VL  - 34
+IS  - 7
+C7  - 188
+DO  - 10.1145/3717061
+AN  - WOS:001582406400001
+AD  - Harbin Inst Technol, Comp Sci, Shenzhen, Peoples R China
+AD  - Concordia Univ, Montreal, PQ, Canada
+AD  - Zhejiang Univ, Hangzhou, Peoples R China
+AD  - Huawei Technol Co Ltd, Shenzhen, Peoples R China
+Y2  - 2025-10-06
+ER  -
+
+TY  - JOUR
+AU  - Yang, Zezhou
+AU  - Chen, Sirong
+AU  - Gao, Cuiyun
+AU  - Li, Zhenhao
+AU  - Hu, Xing
+AU  - Liu, Kui
+AU  - Xia, Xin
+TI  - An Empirical Study of Retrieval-Augmented Code Generation: Challenges and Opportunities
+T2  - Arxiv
+M3  - preprint
+C8  - 1
+AB  - Code generation aims to automatically generate code snippets of specific programming language according to natural language descriptions. The continuous advancements in deep learning, particularly pre-trained models, have empowered the code generation task to achieve remarkable performance. One main challenge of pre-trained models for code generation is the semantic gap between natural language requirements and source code. To address the issue, prior studies typically adopt a retrieval-augmented framework for the task, where the similar code snippets collected by a retrieval process can be leveraged to help understand the requirements and provide guidance for the generation process. However, there is a lack of systematic study on the application of this framework for code generation, including the impact of the final generated results and the specific usage of the framework. In this paper, we choose three popular pre-trained code models, namely CodeGen, UniXcoder, and CodeT5, to assess the impact of the quality and utilization of retrieved code on the retrieval-augmented framework. Our analysis shows that the retrieval-augmented framework is beneficial for improving the performance of the existing pre-trained models. We also provide suggestions on the utilization of the retrieval-augmented code generation framework: BM25 and Sequential Integration Fusion are recommended due to their convenience and superior performance. Sketch Filling Fusion, which extracts a sketch of relevant code, could help the model improve its performance further. Additionally, we conduct experiments to investigate the influence of the retrieval-augmented framework on large language models for code generation, showing the effectiveness of the framework, and we discuss the trade-off between performance improvement and computational costs in each phase within the framework.
+PU  - CORNELL UNIV
+DA  - 2025 
+PY  - 2025
+DO  - arXiv:2501.13742
+AN  - PPRN:120925747
+AD  - Harbin Inst Technol, Shenzhen, Peoples R China
+AD  - Concordia Univ, Montreal, PQ, Canada
+AD  - Zhejiang Univ, Hangzhou, Zhejiang, Peoples R China
+AD  - Huawei Technol Co Ltd, Hangzhou, Peoples R China
+Y2  - 2025-03-15
+ER  -
+
+TY  - CPAPER
+AU  - Abtahi, Seyed Moein
+AU  - Azim, Akramul
+A1  - IEEE COMPUTER SOC
+TI  - Augmenting Large Language Models with Static Code Analysis for Automated Code Quality Improvements
+T2  - 2025 IEEE/ACM SECOND INTERNATIONAL CONFERENCE ON AI FOUNDATION MODELS AND SOFTWARE ENGINEERING, FORGE
+M3  - Proceedings Paper
+CP  - 2nd International Conference on AI Foundation Models and Software Engineering-FORGE
+CL  - Ottawa, CANADA
+AB  - This study examined code issue detection and revision automation by integrating Large Language Models (LLMs) such as OpenAI's GPT-3.5 Turbo and GPT-4o into software development workflows. A static code analysis framework detects issues such as bugs, vulnerabilities, and code smells within a large-scale software project. Detailed information on each issue was extracted and organized to facilitate automated code revision using LLMs. An iterative prompt engineering process is applied to ensure that prompts are structured to produce accurate and organized outputs aligned with the project requirements. Retrieval-augmented generation (RAG) is implemented to enhance the relevance and precision of the revisions, enabling LLM to access and integrate real-time external knowledge. The issue of LLM hallucinations-where the model generates plausible but incorrect outputs-is addressed by a custom-built "Code Comparison App," which identifies and corrects erroneous changes before applying them to the codebase. Subsequent scans using the static code analysis framework revealed a significant reduction in code issues, demonstrating the effectiveness of combining LLMs, static analysis, and RAG to improve code quality, streamline the software development process, and reduce time and resource expenditure.
+PU  - IEEE COMPUTER SOC
+PI  - LOS ALAMITOS
+PA  - 10662 LOS VAQUEROS CIRCLE, PO BOX 3014, LOS ALAMITOS, CA 90720-1264 USA
+SN  - 979-8-3315-0212-6
+SN  - 979-8-3315-0211-9
+DA  - 2025 
+PY  - 2025
+SP  - 82
+EP  - 92
+DO  - 10.1109/Forge66646.2025.00017
+AN  - WOS:001549143400010
+AD  - Ontario Tech Univ, Fac Engn & Appl Sci, Oshawa, ON, Canada
+Y2  - 2025-09-06
+ER  -
+
+TY  - JOUR
+AU  - Feng, Xiaorong
+AU  - Gao, Ying
+AU  - Du, Pengyi
+AU  - Shi, Leyu
+TI  - Research on Prompt Engineering to Enhance LLM-Driven CPG Vulnerability Reachability
+T2  - CMC-COMPUTERS MATERIALS & CONTINUA
+M3  - Article
+AB  - In recent years, large language models (LLMs) have seen growing application in code understanding and security analysis. However, their performance relies heavily on prompt context quality and engineering design, with unstable vulnerability detection and high false positive rates remaining key bottlenecks to reliable adoption. This paper systematically reviews advances in prompt engineering and context optimization across four core areas and proposes LARA (LLM-Augmented Reachability Analysis), a neural-symbolic framework leveraging code property graphs (CPGs), which uses a static analysis engine to extract source-to-sink data flow paths, integrates systematic prompt engineering to create context-aware prompts, and invokes LLMs for path risk scoring and reasoning. The framework forms a closed-loop process of path identification, risk assessment, and manual verification. Experimental validation on the Log4Shell vulnerability shows LARA accurately identifies core exploit paths and outperforms traditional static signature methods in covering unknown/variant vulnerabilities without explicit dangerous functions, with notable improvements in contextual understanding and detection accuracy. Our study identifies three core research trends: systematic context engineering, task-adaptive prompt strategies, and prompt-analysis closed loops in code security. However, LLMs still face challenges like long-text generation logic breaks, cross-model prompt transfer degradation, and code security false positive control. Future work should focus on long-context understanding/generation co-optimization, code-security-oriented fine-tuning of open-source LLMs, and deep CPG-prompt engineering integration to advance LLMs' practical use in code security.
+PU  - TECH SCIENCE PRESS
+PI  - HENDERSON
+PA  - 871 CORONADO CENTER DR, SUTE 200, HENDERSON, NV 89052 USA
+SN  - 1546-2218
+SN  - 1546-2226
+DA  - 2026 
+PY  - 2026
+VL  - 88
+IS  - 2
+C7  - 62
+DO  - 10.32604/cmc.2026.075938
+AN  - WOS:001807632700001
+AD  - South China Univ Technol, Sch Comp Sci & Engn, Guangzhou, Peoples R China
+AD  - China Elect Prod Reliabil & Environm Testing Res I, Guangzhou, Peoples R China
+M2  - China Elect Prod Reliabil & Environm Testing Res I
+Y2  - 2026-07-04
+ER  -
+
+TY  - JOUR
+AU  - Chen, Sibei
+AU  - Fan, Ju
+AU  - Wu, Bin
+AU  - Tang, Nan
+AU  - Deng, Chao
+AU  - Wang, Pengyi
+AU  - Li, Ye
+AU  - Tan, Jian
+AU  - Li, Feifei
+AU  - Zhou, Jingren
+AU  - Du, Xiaoyong
+TI  - Automatic Database Configuration Debugging using Retrieval-Augmented Language Models
+T2  - PROCEEDINGS OF THE ACM ON MANAGEMENT OF DATA
+M3  - Article
+AB  - Database management system (DBMS) configuration debugging, e.g., diagnosing poorly configured DBMS knobs and generating troubleshooting recommendations, is crucial in optimizing DBMS performance. However, the configuration debugging process is tedious and, sometimes challenging, even for seasoned database administrators (DBAs) with sufficient experience in DBMS configurations and good understandings of the DBMS internals (e.g., MySQL or Oracle). To address this difficulty, we propose ANDROMEDA, a framework that utilizes large language models (LLMs) to enable automatic DBMS configuration debugging. ANDROMEDA serves as a natural surrogate of DBAs to answer a wide range of natural language (NL) questions on DBMS configuration issues, and to generate diagnostic suggestions to fix these issues. Nevertheless, directly prompting LLMs with these professional questions may result in overly generic and often unsatisfying answers. To this end, we propose a retrieval-augmented generation (RAG) strategy that effectively provides matched domain-specific contexts for the question from multiple sources. They come from related historical questions, troubleshooting manuals and DBMS telemetries, which significantly improve the performance of configuration debugging. To support the RAG strategy, we develop a document retrieval mechanism addressing heterogeneous documents and design an effective method for telemetry analysis. Extensive experiments on real-world DBMS configuration debugging datasets show that ANDROMEDA significantly outperforms existing solutions.
+PU  - ASSOC COMPUTING MACHINERY
+PI  - NEW YORK
+PA  - 1601 Broadway, 10th Floor, NEW YORK, NY USA
+SN  - 2836-6573
+DA  - 2025 JAN
+PY  - 2025
+VL  - 3
+IS  - 1
+C7  - 013
+DO  - 10.1145/3709663
+AN  - WOS:001814724100001
+AD  - Renmin Univ China, Renmin, Peoples R China
+AD  - Alibaba Cloud Comp, Hangzhou, Peoples R China
+AD  - HKUST, HKUST GZ, Hong Kong, Peoples R China
+Y2  - 2026-07-17
+ER  -
+
+TY  - JOUR
+AU  - Guo, Jing-Ming
+AU  - Liu, Po-Yang
+AU  - Zeng, Yi-Chong
+AU  - Chen, Ting-Ju
+TI  - Enhancing Code Transformation in Large Language Models Through Retrieval-Augmented Fine-Tuning
+T2  - IEEE TRANSACTIONS ON CONSUMER ELECTRONICS
+M3  - Article
+AB  - Large language models (LLMs) have made substantial advancements in knowledge reasoning and are increasingly utilized in specialized domains such as code completion, legal analysis, and medical transcription, where accuracy is paramount. In such applications, document-specific precision is more critical than general reasoning capabilities. This paper proposes a novel approach based on Retrieval-Augmented Fine-Tuning (RAFT) to enhance model-generated outputs, particularly in code transformation tasks. RAFT integrates domain-specific knowledge, optimizing in-domain retrieval-augmented generation by training the model to discern the relationship between prompts, retrieved documents, and target outputs. This enables the model to extract relevant information while mitigating the impact of noise. Experimental results demonstrate that the proposed method improves accuracy of 2.4% and CodeBLEU of 1.3% for VB-to-C# code conversion, highlighting its effectiveness in domain-specific applications.
+PU  - IEEE-INST ELECTRICAL ELECTRONICS ENGINEERS INC
+PI  - PISCATAWAY
+PA  - 445 HOES LANE, PISCATAWAY, NJ 08855-4141 USA
+SN  - 0098-3063
+SN  - 1558-4127
+DA  - 2025 FEB
+PY  - 2025
+VL  - 71
+IS  - 1
+SP  - 2342
+EP  - 2346
+DO  - 10.1109/TCE.2025.3565294
+AN  - WOS:001511609900043
+AD  - Natl Taiwan Univ Sci & Technol, Dept Elect Engn, Taipei 10607, Taiwan
+Y2  - 2025-06-26
+ER  -
+
+TY  - CPAPER
+AU  - Gao, Xinyu
+AU  - Xiong, Yun
+AU  - Wang, Deze
+AU  - Guan, Zhenhan
+AU  - Shi, Zejian
+AU  - Wang, Haofen
+AU  - Li, Shanshan
+A1  - ACM
+TI  - Preference-Guided Refactored Tuning for Retrieval Augmented Code Generation
+T2  - PROCEEDINGS OF 2024 39TH ACM/IEEE INTERNATIONAL CONFERENCE ON AUTOMATED SOFTWARE ENGINEERING, ASE 2024
+M3  - Proceedings Paper
+CP  - 39th ACM/IEEE International Conference on Automated Software Engineering (ASE)
+CL  - Sacramento, CA
+AB  - Retrieval-augmented code generation utilizes Large Language Models as the generator and significantly expands their code generation capabilities by providing relevant code, documentation, and more via the retriever. The current approach suffers from two primary limitations: 1) information redundancy. The indiscriminate inclusion of redundant information can result in resource wastage and may misguide generators, affecting their effectiveness and efficiency. 2) preference gap. Due to different optimization objectives, the retriever strives to procure code with higher ground truth similarity, yet this effort does not substantially benefit the generator. The retriever and the generator may prefer different golden code, and this gap in preference results in a suboptimal design. Additionally, differences in parameterization knowledge acquired during pre-training result in varying preferences among different generators.To address these limitations, in this paper, we propose RRG (Retrieve, Refactor, Generate), a novel framework for effective and efficient code generation. This framework introduces a code refactorer module between the retriever and the generator to bridge them. The refactoring process transforms the raw retrieved code into a more concise, efficient, and model-friendly version. It eliminates redundant information and noise, reducing the input length. Consequently, the generator receives higher-quality context, enabling it to produce more accurate results with lower inference costs. We conducted comprehensive experiments on multiple datasets. In the experiments, we confirmed the existence of a preference gap between the retriever and the generator, and RRG effectively bridges this gap. Specifically, RRG achieved significant performance improvements, with increases of up to 28% on EM, 13% on BLEU, and 6.8% on CodeBLEU.
+PU  - ASSOC COMPUTING MACHINERY
+PI  - NEW YORK
+PA  - 1601 Broadway, 10th Floor, NEW YORK, NY, UNITED STATES
+SN  - 1527-1366
+SN  - 979-8-4007-1248-7
+DA  - 2024 
+PY  - 2024
+SP  - 65
+EP  - 77
+DO  - 10.1145/3691620.3694987
+AN  - WOS:001353105400006
+AD  - Fudan Univ, Sch Comp Sci, Shanghai Key Lab Data Sci, Shanghai, Peoples R China
+AD  - Natl Univ Def Technol, Changsha, Hunan, Peoples R China
+AD  - Tongji Univ, Coll Design & Innovat, Shanghai, Peoples R China
+Y2  - 2025-03-09
+ER  -
+
