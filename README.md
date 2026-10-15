@@ -11,11 +11,13 @@
 3. **`search/`**:
    - `search_queries.md`: Complete search strings, boolean logic, and execution parameters applied across ACM Digital Library, Scopus, Web of Science, and IEEE Xplore.
    - `raw/`: Unfiltered search export files from the four digital databases (`acm.bib`, `ieee.bib`, `scopus.bib`, and `wos.ris`).
-4. **`protocol/`**:
-   - `protocolo_parsifal.pdf`: Complete SLR protocol and execution summary exported from Parsifal (in Portuguese).
+4. **protocol/** :
+    - `protocol_parsifal_en.pdf`: Complete SLR protocol and execution summary (translated into English).
+    - `protocol_parsifal_pt.pdf`: Complete SLR protocol and execution summary (original version in Portuguese).
 
-## 🔗 Protocol Registration
-The experimental protocol for this SLR was registered and managed on the [Parsifal](https://parsif.al/) platform.
+## 🔗 Protocol & Management
+
+The experimental protocol and the execution of this SLR were designed, managed, and exported using the [Parsifal](https://parsif.al/) platform. The complete exported protocol summary can be found in the `protocol/` directory of this repository.
 
 ## 📜 License
-This artifact package is shared under the [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license for academic and replication purposes.
+This artifact package is shared under the [CC-BY 4.0](LICENSE) license for academic and replication purposes.
